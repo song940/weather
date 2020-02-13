@@ -1,3 +1,6 @@
+header h1 {
+    text-transform: uppercase;
+  }
 body {
   background-color: #efefef;
 }
@@ -8,29 +11,28 @@ body {
   text-align: right;
 }
 
-.today {
-  &-detail {
+.today-detail {
     margin: 0;
     padding: 0;
     display: flex;
+  }
 
-    li {
+.today-detail li {
       flex: 1;
       list-style: none;
       text-align: center;
+    }
 
-      span {
+.today-detail li span {
         display: block;
       }
-    }
-  }
-}
 .forecast {
   margin: 0;
   padding: 0;
   list-style: none;
 
-  li {
+}
+.forecast li {
     padding: 10px;
     margin: 10px 0;
     overflow: scroll;
@@ -39,8 +41,6 @@ body {
     align-items: center;
     background: #fff;
   }
-
-}
 .weather-item {
   margin: 10px;
   text-align: center;

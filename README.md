@@ -1,2 +1,2 @@
 
-# React App
+# weather app
