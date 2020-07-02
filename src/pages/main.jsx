@@ -22,11 +22,11 @@ const Today = ({ weather }) => {
           <span>feels_like</span>
         </li>
         <li>
-          <span>{humidity}</span>
+          <span>{humidity}%</span>
           <span>humidity</span>
         </li>
         <li>
-          <span>{pressure}</span>
+          <span>{pressure}hpa</span>
           <span>pressure</span>
         </li>
         <li>

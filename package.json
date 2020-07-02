@@ -4,12 +4,13 @@
   "description": "simple app for react",
   "main": "index.js",
   "scripts": {
-    "build": "kelp-build"
+    "build": "kbuild"
   },
+  "source": "./src/pages",
   "author": "lsong",
   "license": "MIT",
   "devDependencies": {
-    "kelp-build": "latest",
+    "@kelpjs/build": "^0.0.14",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },

@@ -2,6 +2,11 @@ body {
   background-color: #efefef;
 }
 
+#app {
+  width: 50%;
+  margin: auto;
+}
+
 .temp {
   margin: 0;
   font-size: 80px;
@@ -45,4 +50,18 @@ body {
   margin: 10px;
   text-align: center;
   display: inline-block;
+}
+
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 95% !important;
+  }
+  .header, .footer {
+    text-align: center;
+  }
+  .nav {
+    float: none;
+    display: block;
+  }
 }

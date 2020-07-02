@@ -1,5 +1,5 @@
 
-const openweathermap = ({ appid } = {}) => {
+const openweathermap = ({ appid, units = 'metric' } = {}) => {
   const api = `https://api.openweathermap.org/data/2.5`;
   return {
     /**
@@ -9,13 +9,13 @@ const openweathermap = ({ appid } = {}) => {
     current(q) {
       return Promise
         .resolve()
-        .then(() => fetch(api + `/weather?q=${q}&appid=${appid}`))
+        .then(() => fetch(api + `/weather?q=${q}&appid=${appid}&units=${units}`))
         .then(res => res.json())
     },
     forecast(q) {
       return Promise
         .resolve()
-        .then(() => fetch(api + `/forecast?q=${q}&appid=${appid}`))
+        .then(() => fetch(api + `/forecast?q=${q}&appid=${appid}&units=${units}`))
         .then(res => res.json())
     },
     forecast_daily(q) {
