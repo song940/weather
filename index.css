@@ -1,0 +1,19 @@
+@import url(https://lsong.org/stylesheets/util.css);
+
+img {
+  display: block;
+}
+
+h2 small {
+  font-size: small;
+  font-weight: normal;
+}
+
+.weather-day-items {
+  display: flex;
+  overflow-x: auto;
+}
+
+.weather-item {
+  min-width: 230px;
+}
