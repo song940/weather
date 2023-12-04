@@ -1,5 +1,5 @@
 import { ready } from 'https://lsong.org/scripts/dom.js';
-import { h, render, useState, useEffect } from 'https://lsong.org/scripts/components/index.js';
+import { h, render, useState, useEffect } from 'https://lsong.org/scripts/react/index.js';
 import { openweathermap } from './openweathermap.js';
 
 const appid = 'f59d0e42623911baec74ffbda1a8c7e7';
