@@ -6,7 +6,6 @@ const appid = 'f59d0e42623911baec74ffbda1a8c7e7';
 const api = openweathermap({ appid });
 
 const WeatherItem = ({ weather: data }) => {
-  console.log(data);
   const { main, visibility, weather, wind, dt_txt = 'Now' } = data || {};
   const { temp, temp_min, temp_max, feels_like, humidity, pressure } = main;
   const [w1] = weather;
@@ -79,7 +78,7 @@ const App = () => {
   const group = groupByDay(list);
   return [
     h('h2', null, [
-      h(coord ? 'a' : 'span', { href: coord && `https://www.openstreetmap.org/#map=18/${coord.lat}/${coord.lon}` }, name),
+      h(coord ? 'a' : 'span', { href: coord && `https://maps.lsong.org/?lat=${coord.lat}&lon=${coord.lon}` }, name),
       country && h('small', {}, `(${country})`),
     ]),
     h('select', { onChange: handleChange }, [
